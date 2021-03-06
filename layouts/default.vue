@@ -26,14 +26,14 @@
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title v-text="title" />
+      <v-app-bar-title v-text="title" />
       <v-spacer />
       <v-btn>
-        <v-icon>mdi-clipboard-account</v-icon>
+        <v-icon class="marginRight5px">mdi-login</v-icon>
         <div>Log In</div>
       </v-btn>
       <v-btn class="marginLeft15px">
-        <v-icon>mdi-clipboard-account</v-icon>
+        <v-icon class="marginRight5px">mdi-clipboard-account</v-icon>
         <div>Register</div>
       </v-btn>
     </v-app-bar>
@@ -79,5 +79,8 @@ export default {
 <style>
 .marginLeft15px {
   margin-left: 15px;
+}
+.marginRight5px {
+  margin-right: 5px;
 }
 </style>
